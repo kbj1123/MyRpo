@@ -1,0 +1,18 @@
+FUNCTION le_result_t SetMcuCommand1
+(
+    int32 value1 IN
+);
+FUNCTION le_result_t SetMcuCommand2
+(
+    string message[100] IN
+);
+FUNCTION le_result_t SetMcuCommand3
+(
+	int32 value1 IN,
+    string message[100] IN
+);
+FUNCTION le_result_t GetMcuCommand1
+(
+    string message[100] OUT // max 3
+);
+

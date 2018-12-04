@@ -1,0 +1,13 @@
+sources:
+{
+	svclayerMcuMgrComponent.c
+	svclayer_McuIpc.c
+	svclayer_McuDb.c
+}
+provides:
+{
+    api:
+    {
+        svcLayerMcu = svcLayerMcu.api
+    }
+}

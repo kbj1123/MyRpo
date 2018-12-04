@@ -1,0 +1,31 @@
+sandboxed: false
+
+executables:
+{
+	svclayermcumgr = ( svclayerMcuMgrComponent )
+}
+
+processes:
+{
+	envVars:
+	{
+		LE_LOG_LEVEL = DEBUG
+	}
+
+	run:
+	{
+		( svclayermcumgr )
+	}
+
+	maxCoreDumpFileBytes: 512K
+	maxFileBytes: 512K
+}
+
+
+extern:
+{
+	svcLayerMcu = svclayermcumgr.svclayerMcuMgrComponent.svcLayerMcu
+}
+
+version: 1.0.0
+maxFileSystemBytes: 512K
